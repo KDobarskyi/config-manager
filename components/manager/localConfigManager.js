@@ -32,7 +32,7 @@ class LocalConfigManager extends ConfigManager {
 
   loadFile (fliename, ext) {
     return this.fs.readFileSync(
-      this.path.join(__dirname, '../../files', fliename + ext),
+      this.path.join(__dirname, '..', '..', 'files', fliename + ext),
       'utf8'
     )
   }
